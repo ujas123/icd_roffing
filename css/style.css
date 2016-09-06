@@ -1,0 +1,116 @@
+* { box-sizing: border-box; }
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i';
+
+body{ font-size:15px; background:#fff; font-family: 'Open Sans', sans-serif;  font-weight:normal; -webkit-font-smoothing: antialiased; margin: 0; padding: 0; color: #9d9d9d;}
+
+	h1, h2, h3, h4, h5, h6, small, form, ul, strong, span { margin:0px; padding:0px; }
+
+	h1 { font-weight:normal;  font-size:27px; margin:0px 0px 40px; padding:0px; color: #000000; }
+	h2 { font-weight:bold;  font-size:24px; margin:0px 0px 20px; padding:0px; }
+	h3 { font-weight:normal;  font-size:27px; margin:0px 0px 20px; padding:0px; color: #000000; }
+	h4 { color: #89c32c; font-size: 15px; font-weight: bold; margin: 0 0 20px 0; }
+	h5 { font-weight:normal;  font-size:18px; margin:0px 0px 10px; padding:0px; }
+	.fl{ float:left;}
+	.fr{ float:right;}
+	p { margin:0px; padding:0px 0px 20px; color: #737171; line-height: 20px; }
+	article, aside, figure, footer, header, hgroup,menu, nav, section { display: block; }
+	.clearfix:after, .grid-block:after, .deepest:after {    clear: both;}
+	.clearfix:before, .clearfix:after, .grid-block:before, .grid-block:after, .deepest:before, .deepest:after {    content: ""; display: table;}
+	.cl{ clear:both; height:0; }
+	a { color: #89c32c; outline:none; transition:all 0.3s ease-in 0s;-webkit-transition:all 0.3s ease-in 0s; text-decoration: none; transition: all 0.3s ease-in 0s;}
+	a:hover { outline:none; text-decoration: none; color: #89c32c; } 
+	a:focus {outline:none; text-decoration: none; color: #89c32c; } 
+	button { outline: none; }
+	ul li{list-style-type: none;}
+	input,textarea { outline: none; border: 0; resize: none; outline: none; cursor: pointer; }
+
+.container { max-width: 970px; margin: 0 auto; padding: 0; }
+
+/******************** header ************************/
+header { min-height: 265px; background: rgba(0, 0, 0, 0) url("../images/header-shape.png") no-repeat; background-size: 100% 100%; float: left; width: 100%; position: relative; z-index: 10; padding: 25px 0 0 0; }
+header .logo { margin: 15px 0 0 40px; float: left; }
+/*header::after { background: rgba(255, 255, 255, 0.84); content: "";  height: 214px;  position: absolute; left: 0;  top: 0; transform: rotateZ(174deg); -webkit-transform: rotateZ(174deg);  width: 100%;  z-index: -1; overflow: hidden; }*/
+
+
+/***********************************************/
+.menu-fix { float: right; position: relative; margin-top: 35px; }
+.navigation-toggle-btn {  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;  border: medium none;  display: inline-block;  float: left;  padding: 0;  width: 50px; cursor: pointer;}
+.navigation-toggle-btn a { color: #5b5b5b; text-transform: uppercase; font-size: 13px; font-weight: bold; letter-spacing: 2.5px; }
+.navigation-toggle-btn .icon-bar { background-color: #84c12c; height: 5px; width: 50px; float: left; margin-bottom: 5px;  }
+.navigation-toggle { float: right; padding-right: 8px; }
+.navigation {  clear: both; display: none; float: right; position: absolute; right: 0;  top: 60px;}
+.navigation ul { background: rgba(0, 0, 0, 0.82); width: 200px; text-align: right; padding: 25px 0; }
+.navigation ul li a { color: #fff; font-size: 15px; font-weight: bold; line-height: 30px; padding: 0 15px; display: block; }
+.navigation ul li + li { margin-top: 2px; }
+.navigation ul li.active a { background: #84c12c; color: #000; }
+.navigation ul li a:hover,.navigation ul li a:focus { background: #84c12c; color: #000; }
+
+/*************************************************/
+.slider { float: left; width: 100%; margin-top: -135px; position: relative; margin-bottom: 15px; }
+/*.slider::before {background: #ffffff none repeat scroll 0 0;  bottom: -52px;  content: "";  height: 100px;  left: -22px; position: absolute;  transform: rotateZ(-176deg); -webkit-transform: rotateZ(-176deg); width: 100%;}*/
+.slider::before  {background: url(../images/slider-shap.png) no-repeat;  bottom: 0;  content: "";  left: 0; position: absolute;  width: 100%; min-height: 97px; min-height: 97px; z-index: 1; }
+.slider .slide-desc-text-default { padding: 0; }
+
+.slider > img { width: 100%; }
+.slider .slider-text { position: absolute; bottom: 60px; right: 100px; z-index: 10; }
+.slider .slider-text article { color: #fff; font-weight: bold; font-size: 9px; background: rgba(0, 0, 0, 0.69); padding: 0 20px; height: 34px; line-height: 34px }
+
+
+/************************ content-box ******************************/
+.home-page .content-box { padding-bottom:50px;}
+.content-box { float: left;  width: 100%; padding: 0 0 162px; position: relative; }
+.content-box .container { padding: 0 25px; }
+.content-box a.find-out { font-weight: bold; }
+/*.content-box .col-8 { width: 58%; }*/
+.content-box .content-side.right { float: left; width: 58% }
+/*.content-box .col-8 + .col-8 { margin-top: 30px; }*/
+.content-box .col-8 p:last-of-type{ padding: 0; }
+.content-box .col-8.gallery { padding: 30px 0 0 10px; width: 58%; }
+.content-box .col-8.gallery ul li { float: left; width: 30.7%;}
+.content-box .col-8.gallery ul li + li { margin-left: 19px; }
+.content-box .col-8.gallery ul li img { width: 100%; }
+
+.content-box .right-side { width: 35%; float: right; } 
+.content-box .right-side ul.roof-service li.roofing-services { color: #fff; font-weight: bold; background: #5b5b5b; padding: 8px 15px 8px 25px;  margin-bottom: 5px; position: relative; display: inline-block; }
+.content-box .right-side ul.roof-service li.roofing-services:before { width: 12px; height: 12px; background: #89c32c; content: ""; position: absolute; left: 6px; top: 13px; }
+.content-box .right-side ul.roof-service li {  }
+.content-box .right-side ul.roof-service li a { font-size: 17px; font-weight: 300; color: #fff; background: #89c32c; color: #fff; padding: 4px 15px 4px 25px; display: inline-block; position: relative; }
+.content-box .right-side ul.roof-service li a:before { width: 12px; height: 12px; background: #000000; content: ""; position: absolute; left: 6px; top: 10px;  }
+.content-box .right-side ul.roof-service li + li { margin-top: 3px; } 
+
+/********************** testimonials ***************************/
+.testimonials { float: left; width: 100%; text-align: center; margin-bottom: 70px; }
+.testimonials h4 { color: #89c32c; font-size: 15px; font-weight: bold;  margin: 0 0 20px 0; letter-spacing: 2px; }
+.testimonials blockquote { color: #858282; font-size: 28px; font-weight: 300; margin: 0 auto; max-width: 745px; }
+.testimonials blockquote span { color: #89c32c; }
+
+
+/************************* footer ***************************/
+footer { float: left; width: 100%; background: #000000 url(../images/foote-shap-img.png); text-align: center; padding: 40px 0 35px 0; position: relative; }
+footer::after { background: url("../images/foote-shap-img.png") no-repeat; background-size: 100% 100%; content: "";height: 377px;left: 0; position: absolute;  top: -246px; width: 100%;z-index: -1;}
+footer .footer-logo {  display: inline-block;  margin-bottom: 15px;  width: 100%;}
+footer .footer-logo > a { display: inline-block;}
+footer .footer-social {  display: inline-block; margin-bottom: 5px; }
+footer .footer-social ul li { float: left; }
+footer .footer-social ul li + li { margin-left: 2px; }
+footer .container { position: relative; }
+footer h3 { color: #fff; }
+
+
+/*************************************/
+.content-box { min-height: 500px; }
+.content-box .left-side-main .left { float: left; width: 25%; padding-right: 20px; }
+.inner-page .content-box .right-side { float: right; width: 23%;}
+.inner-page .content-box .content-side.right { float: left;  width: 74%;}
+.content-box .content-side.left { float: right; width: 74%;}
+.content-box .content-side.both { float: left;  width: 49%;}
+
+.left-header {left: 15px;position: absolute;  width: 15%; }
+.middle-header { left: 48%;  position: absolute;  width: 20%; }
+.main-body-top {  display: inline-block;  width: 100%;}
+.content-side.full { width: 100%; display: inline-block; }
+.main-body-bottom { width: 100%; display: inline-block; }
+.bottom { width: 100%; display: inline-block; }
+
+.footer-left { left: 20px;  position: absolute;width: 30%; top: 0;}
+.footer-right { right: 20px;  position: absolute;width: 30%; top: 0;}
