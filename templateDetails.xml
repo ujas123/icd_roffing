@@ -44,7 +44,6 @@
 		<position>social</position>
 		<position>copyright</position>
 		<position>footer-right</position>
-		<position>github</position>
 		<position>debug</position>		
 	</positions>
 	<languages folder="language">
